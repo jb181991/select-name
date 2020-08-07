@@ -1,0 +1,20 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+// @import '~@ttskch/select2-bootstrap4-theme/dist/select2-bootstrap4.css';
+
+// @import '~select2/dist/css/select2.css';
+
+@import "~vue-select/src/scss/vue-select.scss";
