@@ -1,4 +1,4 @@
-<p align="center">Laravel VueJs</p>
+<p align="center">Using Laravel and VueJs</p>
 
 ## About Select Name
 
