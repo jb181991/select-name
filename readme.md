@@ -15,11 +15,11 @@ cd projectName/
 
 **Step: _3_** Change the following in the _.env_
 
-``
+```
 DB_DATABASE=your_db
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
-``
+```
 
 **Step: _4_** Run the following:
 ```
