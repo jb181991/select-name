@@ -22,6 +22,7 @@
     "dependencies": {
         "@ttskch/select2-bootstrap4-theme": "^1.4.0",
         "select2": "^4.0.13",
+        "v-select2-component": "^0.4.3",
         "vue-axios": "^2.1.5",
         "vue-select": "^3.10.7",
         "vue-simple-alert": "^1.1.1"

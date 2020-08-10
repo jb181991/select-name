@@ -1,18 +1,22 @@
 <template>
-    <select class="form-control" v-model="selected" @change="setSelected($event)">
-        <option value="0">Create New</option>
-        <option v-for="option in options" v-bind:value="option.id">
-            {{ option.text }}
-        </option>
-    </select>
+    <Select2
+        v-model="value"
+        :options="options"
+        :settings="{ settingOption: value, settingOption: value }"
+        @change="changeEvt($event)"
+        @select="selectEvt($event)" />
 </template>
 
 <script>
+    import Select2 from 'v-select2-component';
+
     export default {
+        components: {Select2},
+
         data () {
             return {
-                options: [],
-                selected: '',
+                value: '',
+                options: []
             }
         },
         mounted() {
@@ -21,8 +25,12 @@
             this.getOptions();
         },
         methods: {
-            setSelected(event) {
-                if(event.target.value == 0) {
+            changeEvt(event) {
+                // change event
+            },
+            selectEvt(event) {
+                // console.log(event.id);
+                if(event.id == 0) {
                     this.$fire({
                         title: 'Enter your name',
                         input: 'text',
@@ -73,6 +81,7 @@
                     .then(res => res.json())
                     .then(data => {
                         this.options = data.user;
+                        this.options.push({id: 0, text: 'Create New'});
                     });
             }
         }     
