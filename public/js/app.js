@@ -52621,6 +52621,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 return res.json();
             }).then(function (data) {
                 _this2.options = [];
+                _this2.value = null;
                 _this2.getOptions();
             });
         },

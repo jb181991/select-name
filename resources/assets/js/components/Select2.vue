@@ -66,6 +66,7 @@
                 .then(res => res.json())
                 .then(data => {
                     this.options = [];
+                    this.value = null;
                     this.getOptions();
                 });
             },
