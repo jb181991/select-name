@@ -11,20 +11,22 @@
     },
     "devDependencies": {
         "axios": "^0.18.1",
-        "bootstrap": "^4.0.0",
+        "bootstrap": "^4.5.2",
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.4",
         "popper.js": "^1.12",
-        "vue": "^2.5.7"
+        "vue": "^2.6.11"
     },
     "dependencies": {
         "@ttskch/select2-bootstrap4-theme": "^1.4.0",
+        "bootstrap-vue": "^2.16.0",
         "select2": "^4.0.13",
         "v-select2-component": "^0.4.3",
         "vue-axios": "^2.1.5",
         "vue-select": "^3.10.7",
-        "vue-simple-alert": "^1.1.1"
+        "vue-simple-alert": "^1.1.1",
+        "vuelidate": "^0.7.5"
     }
 }

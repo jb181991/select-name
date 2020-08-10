@@ -9,8 +9,17 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 import VueSimpleAlert from "vue-simple-alert";
+import { BootstrapVue, ModalPlugin } from 'bootstrap-vue';
+import Vuelidate from 'vuelidate'
+
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
 
 Vue.use(VueSimpleAlert);
+Vue.use(BootstrapVue);
+Vue.use(ModalPlugin);
+Vue.use(Vuelidate);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

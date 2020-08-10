@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('get-options', 'HomeController@getOptions');
-Route::post('add-name', 'HomeController@addName');
+Route::post('add-user', 'HomeController@addUser');
